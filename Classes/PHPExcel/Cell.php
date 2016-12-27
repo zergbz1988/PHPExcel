@@ -316,7 +316,7 @@ class PHPExcel_Cell
     public function setCalculatedValue($pValue = null)
     {
         if ($pValue !== null) {
-            $this->calculatedValue = (is_numeric($pValue)) ? (float) $pValue : $pValue;
+            $this->calculatedValue = $pValue;
         }
 
         return $this->notifyCacheController();
